@@ -1,13 +1,14 @@
 package org.scut.v1.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
-import java.util.Date;
 import com.baomidou.mybatisplus.annotation.TableId;
-import java.io.Serializable;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+
+import java.io.Serializable;
+import java.util.Date;
 
 /**
  * <p>
@@ -28,7 +29,7 @@ public class Service implements Serializable {
     private Integer id;
 
     @ApiModelProperty(value = "1代表1级服务")
-    private Integer rank;
+    private Integer level;
 
     @ApiModelProperty(value = "每月金额")
     private Integer price;
